@@ -1,7 +1,26 @@
 {
-    "name": "Hardware Process Template",
-    "description": "Dummy spec.json file",
+    "name": "Autokit relay enclosure",
+    "description": "3d printed enclosure for USB relay",
     "hwType" : "3d",
+    "links":{
+        "source": "https://cad.onshape.com/documents/4a734179a4bf72ca3cf4dc82/v/0fcfc861c56588e719f614ad/e/0323c8faa4d42ca9fcdb2b1a?renderMode=0&uiState=628bbdd0a1042f44aeda13e6"
+    },
     "manufacture" : [
+        {
+            "name": "Top half",
+            "slug": "relay-top-half",
+            "parameters": {
+                "quantity": 1,
+                "material" : ["nylon", "pla"]
+            }
+        },
+        {
+            "name": "Bottom half",
+            "slug": "relay-bottom-half",
+            "parameters": {
+                "quantity": 1,
+                "material" : ["nylon", "pla"]
+            }
+        }
     ]
 }
