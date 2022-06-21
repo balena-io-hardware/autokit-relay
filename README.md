@@ -2,7 +2,7 @@
 
 This repo contains the files needed to source components and assemble the USB relay device that is to be used as part of the autmoation kit suite. 
 
-![block-diagram](documentation/images/block-diagram.pdf)
+![block-diagram](documentation/images/block-diagram.pdf?raw=true "Diagram")
 
 The device is built around an off the shelf USB relay, with an enclosure built around it for both safety and ease of use.
 
