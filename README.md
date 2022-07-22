@@ -13,9 +13,35 @@ The quickest way to use it is to install the package:
 sudo apt-get install usbrelay
 ```
 
-And then toggle with:
+Check your device's serial number:
+
 ```
-sudo usbrelay PSUIS_1=0
+sudo usbrelay
+```
+
+Example output:
+
+```
+root@a6a7c99:/usr/src/app# usbrelay HURTM_1=0
+Orig: HURTM, Serial: HURTM, Relay: 1 State: fd
+Device Found
+  type: 16c0 05df
+  path: /dev/hidraw0
+  serial_number:
+  Manufacturer: www.dcttech.com
+  Product:      USBRelay2
+  Release:      100
+  Interface:    0
+  Number of Relays = 2
+Serial: HURTM, Relay: 1 State: fd
+1 HID Serial: HURTM Serial: HURTM, Relay: 1 State: fd
+
+Serial: HURTM, Relay: 1 State: fd --- Found
+```
+
+And then toggle it with:
+```
+sudo usbrelay HURTM_1=0
 ```
 
 ## Capabilities
@@ -28,7 +54,7 @@ sudo usbrelay PSUIS_1=0
 
 - C14 power input to connect to mains
 - C13 output to connect to plug adapter for country/region its being used in
-- USB A to connect to the host that will control the relay
+- USB B to connect to the host that will control the relay
 
 ### Software
 
